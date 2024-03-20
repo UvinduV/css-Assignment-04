@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="/../assets/normalize.css">
+    <title>Case-03</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: blueviolet;
+
+            animation-duration: 5s;
+            animation-name: my-animation;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+        }
+        @keyframes my-animation {
+
+            0%{
+                background-color: blueviolet;
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(180deg);
+            }
+            25%{
+                background-color: #ff253a;
+                margin-left: calc(100vw - 200px);
+                margin-top: 0;
+                transform: rotate(0deg);
+            }
+            50%{
+                background-color: orange;
+                margin-left: calc(100vw - 200px);
+                margin-top: calc(100vh - 100px);
+                transform: rotate(180deg);
+            }
+            75%{
+                background-color: yellow;
+                margin-top:calc(100vh - 100px);
+                margin-left: 0;
+                transform: rotate(-0deg);
+            }
+            100%{
+                background-color: blue;
+                margin-left:0;
+                margin-top: 0;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
