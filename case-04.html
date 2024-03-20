@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="/../assets/normalize.css">
+    <title>Case-04</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        div{
+            width: 100px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border: 2px solid blueviolet;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation-duration: 3s;
+            animation-name: my-animation;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes my-animation {
+            From{
+                width: 100px;
+                opacity: 1;
+            }
+            To{
+                width: 400px;
+                opacity: 0;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html>
